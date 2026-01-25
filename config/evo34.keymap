@@ -64,7 +64,7 @@
       bindings = <
         &kp Q            &kp W            &kp E            &kp R           &kp Y                 &kp U             &kp I           &kp O            &kp P            &kp BSPC
         &kp A            &kp S            &kp D            &kp F           &kp G                 &kp H             &kp J           &kp K            &kp L            &mt _SYS
-        &kp Z            &kp X            &kp C            &kp V           &kp B                 &kp N             &kp M           &kp              &kp FSLH         &to _NNM
+        &kp Z            &kp X            &kp C            &kp V           &kp B                 &kp N             &kp M           &kp N0           &kp FSLH         &to _NNM
                                                            &kp LSHIFT      &kp SPC               &kp ENTER         &kp LEFT_WIN
       >;
     };
