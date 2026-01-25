@@ -1,3 +1,4 @@
+ url=https://github.com/trey120-eng/zmk-config-altea/blob/43e20b398a020e86485a25a6874d804e46c58cf9/config/evo34.keymap
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
@@ -63,8 +64,8 @@
     default_layer {
       bindings = <
         &kp Q            &kp W            &kp E            &kp R           &kp Y                 &kp U             &kp I           &kp O            &kp P            &kp BSPC
-        &kp A            &kp S            &kp D            &kp F           &kp G                 &kp H             &kp J           &kp K            &kp L            &mt _SYS
-        &kp Z            &kp X            &kp C            &kp V           &kp B                 &kp N             &kp M           &kp              &kp FSLH         &to _NNM
+        &kp A            &kp S            &kp D            &kp F           &kp G                 &kp H             &kp J           &kp K            &kp L            &mo _SYS
+        &kp Z            &kp X            &kp C            &kp V           &kp B                 &kp N             &kp M           &kp COMMA        &kp FSLH         &to _NNM
                                                            &kp LSHIFT      &kp SPC               &kp ENTER         &kp LEFT_WIN
       >;
     };
@@ -72,7 +73,7 @@
     nnm_layer {
       bindings = <
         &kp ESC          &kp N1           &kp N2           &kp N3           &kp N4                &kp N5           &kp N6           &kp N7           &kp N8           &kp N9
-        &mt LSHIFT BSPC  &kp LALT LEFT    &kp LGUI DOWN    &kp LCTRL RIGHT  &kp LBKT              &kp EQUAL        &kp RCTRL N4     &kp RGUI N5      &kp RALT N6      &kp RSHIFT N0
+        &mt LSHIFT BSPC  &kp LALT         &kp LEFT         &kp LGUI        &kp DOWN              &kp LCTRL        &kp RIGHT        &kp LBKT         &kp EQUAL        &kp RSHIFT
         &kp HOME         &kp PG_UP        &kp PG_DN        &mt LSHIFT END   &kp RBKT              &kp MINUS        &kp N1           &kp N2           &kp N3           &kp DOT 
                                                            &trans           &trans                &trans           &trans
       >;
@@ -115,3 +116,4 @@
       >;
     };
   };
+};
