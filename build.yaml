@@ -19,7 +19,7 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: pro_micro
     shield: evo34_left
-  - board: nice_nano
+  - board: pro_micro
     shield: evo34_right
