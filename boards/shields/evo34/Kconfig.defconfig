@@ -1,0 +1,16 @@
+if SHIELD_EVO34_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "evo34"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_EVO34_LEFT
+
+if SHIELD_EVO34_LEFT || SHIELD_EVO34_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_EVO34_LEFT || SHIELD_EVO34_RIGHT

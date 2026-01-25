@@ -1,0 +1,18 @@
+// This file was generated from a template. Edit it to match your keyboard.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield for more
+// instructions.
+
+#include "evo34.dtsi"
+
+#include "my_keyboard.dtsi" // The shared dtsi file is included in the overlay
+
+// Label of the kscan node in the dtsi
+&kscan0 {
+    col-gpios
+        = <&nice_nano_v2 15 GPIO_ACTIVE_HIGH>
+        , <&nice_nano_v2 18 GPIO_ACTIVE_HIGH>
+        , <&nice_nano_v2 19 GPIO_ACTIVE_HIGH>
+        , <&nice_nano_v2 20 GPIO_ACTIVE_HIGH>
+        , <&nice_nano_v2 21 GPIO_ACTIVE_HIGH>
+        ;
+};
