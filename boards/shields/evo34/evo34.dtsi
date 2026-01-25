@@ -14,10 +14,10 @@
 
 
         row-gpios
-            = <&nice_nano_v2 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&nice_nano_v2 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&nice_nano_v2 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&nice_nano_v2 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
 
