@@ -14,7 +14,6 @@
 #define _NNM 1
 #define _MED 2
 #define _SYS 3
-#define _GM1 4
 #define _GM2 5
 
 &mt {
@@ -57,50 +56,23 @@
       bindings = <&mo>, <&kp>;
     };
   };
-<<<<<<< HEAD
-=======
-  macros {
-    #include "macros.dtsi"
-  };
 
-  combos {
-    compatible = "zmk,combos";
-    combo_system {
-      timeout-ms = <100>;
-      key-positions = <0 20>;
-      bindings = <&tog _SYS>;
-      layers = <0 _SYS>;
-    };
-    combo_boot {
-      timeout-ms = <100>;
-      key-positions = <0 4>;
-      bindings = <&bootloader>;
-      layers = <0>;
-    };
-    #include "combos.dtsi"
-  };
->>>>>>> 1be20e01c7b10ca99fa57f01ac1d24dc83cd40c0
-
-  keymap {
+ keymap {
     compatible = "zmk,keymap";
 
     default_layer {
       bindings = <
-        &kp W            &kp L            &kp Y            &kp P            &kp B                 &kp Z            &kp F            &kp O            &kp U            &kp SQT
-        &mt LSHIFT C     &mt LALT R       &mt LGUI S       &mt LCTRL T      &kp G                 &kp M            &mt RCTRL N      &mt RGUI E       &mt RALT I       &mt RSHIFT A
-        &kp Q            &kp J            &kp V            &mt LSHIFT D     &kp K                 &kp X            &kp H            &kp SEMI         &kp COMMA        &kp DOT
-                                                           &hlt _NNM TAB    &lt _MED SPC          &hmt LSHIFT BSPC &none
+        &kp Q            &kp W            &kp E            &kp R           &kp Y                 &kp U             &kp I           &kp O            &kp P            &kp BSPC
+        &kp A            &kp S            &kp D            &kp F           &kp G                 &kp H             &kp J           &kp K            &kp L            &mt _SYS
+        &kp Z            &kp X            &kp C            &kp V           &kp B                 &kp N             &kp M           &kp N0           &kp FSLH         &to _NNM
+                                                           &kp LSHIFT      &kp SPC               &kp ENTER         &kp LEFT_WIN
       >;
     };
 
     nnm_layer {
       bindings = <
-<<<<<<< HEAD
         &kp ESC          &kp N1           &kp N2           &kp N3           &kp N4                &kp N5           &kp N6           &kp N7           &kp N8           &kp N9
-=======
-        &kp GRAVE        &kp ESC          &kp UP           &kp ENTER        &kp DEL               &kp BSLH         &kp N7           &kp N8           &kp N9           &kp FSLH 
->>>>>>> 1be20e01c7b10ca99fa57f01ac1d24dc83cd40c0
-        &mt LSHIFT BSPC  &mt LALT LEFT    &mt LGUI DOWN    &mt LCTRL RIGHT  &kp LBKT              &kp EQUAL        &mt RCTRL N4     &mt RGUI N5      &mt RALT N6      &mt RSHIFT N0
+        &mt LSHIFT BSPC  &kp LALT LEFT    &kp LGUI DOWN    &kp LCTRL RIGHT  &kp LBKT              &kp EQUAL        &kp RCTRL N4     &kp RGUI N5      &kp RALT N6      &kp RSHIFT N0
         &kp HOME         &kp PG_UP        &kp PG_DN        &mt LSHIFT END   &kp RBKT              &kp MINUS        &kp N1           &kp N2           &kp N3           &kp DOT 
                                                            &trans           &trans                &trans           &trans
       >;
@@ -117,21 +89,13 @@
 
     system_layer {
       bindings = <
-        &none            &bt BT_PRV       &bt BT_CLR       &bt BT_NXT       &out OUT_BLE          &none            &none            &none            &none            &none
+        &studio_unlock   &bt BT_PRV       &bt BT_CLR       &bt BT_NXT       &out OUT_BLE          &none            &none            &none            &none            &none
         &bootloader      &bt BT_SEL 3     &bt BT_SEL 4     &none            &out OUT_TOG          &none            &none            &none            &none            &none
         &none            &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &out OUT_USB          &none            &none            &none            &none            &none
                                                            &trans           &trans                &trans           &trans
       >;
     };
 
-    gaming_layer_1 {
-      bindings = <
-        &kp TAB         &kp Q            &kp W             &kp E            &kp R                 &kp Y            &kp U            &kp I            &kp O            &kp P
-        &kp LSHIFT      &kp A            &kp S             &kp D            &kp F                 &kp H            &kp J            &kp K            &kp L            &kp UP
-        &kp LCTRL       &kp Z            &kp X             &kp C            &kp V                 &kp N            &kp M            &kp LEFT         &kp RIGHT        &kp DOWN
-                                                           &mo _GM2         &kp SPC               &kp G            &kp B
-      >;
-    };
     
     gaming_layer_2 {
       bindings = <
@@ -151,8 +115,4 @@
       >;
     };
   };
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 1be20e01c7b10ca99fa57f01ac1d24dc83cd40c0
