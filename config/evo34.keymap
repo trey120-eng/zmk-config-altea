@@ -57,8 +57,8 @@
     };
   };
 
- &keymap {
-     compatible = "zmk,keymap";
+ keymap {
+    compatible = "zmk,keymap";
 
     default_layer {
       bindings = <
