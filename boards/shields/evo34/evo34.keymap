@@ -56,9 +56,6 @@
       bindings = <&mo>, <&kp>;
     };
   };
-  macros {
-    #include "macros.dtsi"
-  };
 
   };
 
