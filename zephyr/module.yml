@@ -1,4 +1,3 @@
 build:
-name: zmk-keyboard-<evo34>
   settings:
     board_root: .
