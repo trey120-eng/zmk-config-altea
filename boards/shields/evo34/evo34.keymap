@@ -12,9 +12,9 @@
 // LAYERS
 #define _BSE 0
 #define _NNM 1
-#define _MED 2
+#define _NAV 2
 #define _SYS 3
-#define _GM2 5
+#define _SYM 5
 
 &mt {
   flavor = "tap-preferred";
@@ -62,19 +62,19 @@
 
     default_layer {
       bindings = <
-        &kp Q            &kp W            &kp E            &kp R           &kp Y                 &kp U             &kp I           &kp O            &kp P            &kp BSPC
-        &kp A            &kp S            &kp D            &kp F           &kp G                 &kp H             &kp J           &kp K            &kp L            &to _SYS
-        &kp Z            &kp X            &kp C            &kp V           &kp B                 &kp N             &kp M           &kp N0           &kp FSLH         &to _NNM
-                                                           &kp LSHIFT      &kp SPC               &kp ENTER         &kp LEFT_WIN
+        &kp Q            &kp W            &kp E            &kp R           &kp T                 &kp Y             &kp U           &kp I            &kp O            &kp P
+        &kp A            &kp S            &kp D            &kp F           &kp G                 &kp H             &kp J           &kp K            &kp L            &kp SQT
+        &kp Z            &kp X            &kp C            &kp V           &kp B                 &kp N             &kp M           &kp COMMA        &kp DOT          &kp UNDER
+                                                           &to _NAV        &kp SPACE             &kp LSHIFT        &to _SYM
       >;
     };
 
     nnm_layer {
       bindings = <
-        &kp ESC          &kp N1           &kp N2           &kp N3           &kp N4                &kp N5           &kp N6           &kp N7           &kp N8           &kp N9
-        &mt LSHIFT BSPC  &mt LALT LEFT    &mt LGUI DOWN    &mt LCTRL RIGHT  &kp LBKT              &kp EQUAL        &mt RCTRL N4     &mt RGUI N5      &mt RALT N6      &mt RSHIFT N0
-        &kp HOME         &kp PG_UP        &kp PG_DN        &mt LSHIFT END   &kp RBKT              &kp MINUS        &kp N1           &kp N2           &kp N3           &kp DOT 
-                                                           &trans           &trans                &trans           &trans
+        &kp GRAVE        &kp LPAR         &kp LBKT         &kp RBKT         &kp LT                &kp GT           &kp C_BRI_DEC    &kp C_BRI_UP     &kp RPAR         &kp TILDE
+        &kp PIPE         &kp SEMI         &kp EQUAL        &kp MINUS        &kp EXCL              &kp HASH         &kp LEFT_WIN     &kp RCTRL        &kp RALT         &kp RSHIFT
+        &kp AT           &kp AMPS         &kp PLUS         &kp PRCNT        &kp QMARK             &kp SLASH        &kp DLLR         &kp ASTRK        &kp BACKSLASH    &kp CARET 
+                                                           &to _NAV         &kp SPACE             &kp LSHIFT       &to _NNM
       >;
     };
 
